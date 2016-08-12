@@ -82,8 +82,8 @@ Selection show(const char *message, const char *title, Style style, Buttons butt
    setButtons(alert, buttons);
 
    // Force the alert to appear on top of any other windows
-   ProcessSerialNumber psn = { 0, kCurrentProcess };
-   TransformProcessType(&psn, kProcessTransformToUIElementApplication);
+//   ProcessSerialNumber psn = { 0, kCurrentProcess };
+//   TransformProcessType(&psn, kProcessTransformToUIElementApplication);
    [[alert window] makeKeyWindow];
 
    Selection selection = getSelection([alert runModal], buttons);
